@@ -1,4 +1,4 @@
-package br.com.natanloterio.zazentimer;
+package br.com.natanloterio.zazentimer.components;
 
 import android.os.Handler;
 

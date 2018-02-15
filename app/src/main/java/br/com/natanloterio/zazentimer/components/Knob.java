@@ -1,4 +1,4 @@
-package br.com.natanloterio.zazentimer;
+package br.com.natanloterio.zazentimer.components;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -257,7 +257,7 @@ public class Knob extends View {
             return balloonValuesArray[actualState].toString();
     }
 
-    void displayBalloons() {
+   synchronized void displayBalloons() {
         if (!showBalloonValues) return;
         if (balloonPopup == null || !balloonPopup.isShowing())
             balloonPopup = BalloonPopup.Builder(ctx, this)
